@@ -23,15 +23,29 @@
 
   <!-- Informations générales -->
   <name>demo</name><!-- nom du projet -->
-  <url>http://maven.apache.org</url><!-- Organisation du projet. -->
+  <description>
+    Démo de la formation Maven d'OpenClassroom suivie par Marc Harnist le 9 oct 2019
+  </description>
+  <url>https://openclassrooms.com/fr/courses/4503526-organisez-et-packagez-une-application-java-avec-apache-maven/4609040-decrivez-votre-projet</url><!-- Organisation du projet. -->
 
   <!-- Les propriétés: des constantes. -->
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	<!-- Ici je peux ajouter une version de Apache Struts si je le souhaite. -->
+	<apache.struts.version>2.5.10.1</apache.struts.version>
   </properties>
 
   <dependencies>
+	<dependency>
+      <groupId>org.apache.struts</groupId>
+	  <artifactId>struts2-core</artifactId>
+	  <version>${apache.struts.version}</version>
+	</dependency>
+    <dependency>
+      <groupId>org.apache.struts</groupId>
+	  <artifactId>struts2-json-plugin</artifactId>
+	  <version>${apache.struts.version}</version>
+	</dependency>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
@@ -39,4 +53,10 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
+  <build>
+    <directory>${project.basedir}/output</directory>
+  </build>
+
 </project>
+
+
