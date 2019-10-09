@@ -1,0 +1,42 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <!--  POM = project object model -->
+
+  <!-- Nom de l'organisation qui gére cette application -->
+  <groupId>fr.openclassroom.demo</groupId>
+  
+  <!-- Identifiant du projet -->
+  <artifactId>demo</artifactId>
+  
+  <!-- Version -->
+  <!-- Si la version s'appelle 1.0-SNAPSHOT : elle n'est pas figée. C'est une version
+       en cours de développement. On supprime -SNAPSHOT quand le code est figé. C'est
+       une release et la version ne bougera plus. On rajoutera -SNAPSHOT quand on 
+       viendra modifier l'application.
+       -->
+  <version>1.0-SNAPSHOT</version>
+  
+  <!-- Le type de packaging que l'ide doit générer. War est une archive. -->
+  <packaging>jar</packaging>
+
+  <!-- Informations générales -->
+  <name>demo</name><!-- nom du projet -->
+  <url>http://maven.apache.org</url><!-- Organisation du projet. -->
+
+  <!-- Les propriétés: des constantes. -->
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	<!-- Ici je peux ajouter une version de Apache Struts si je le souhaite. -->
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+</project>
