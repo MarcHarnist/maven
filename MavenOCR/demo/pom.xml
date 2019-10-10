@@ -56,6 +56,25 @@
   <build>
     <directory>${project.basedir}/output</directory>
   </build>
+  <!-- More project informations -->
+  <developers>
+    <developer>
+      <id>hm</id>
+      <name>Harnist Marc</name>
+      <email>harnist.marc@gmail.com</email>
+      <url>http://marcharnist.fr/</url>
+      <organization>byGecko</organization>
+      <organizationUrl>http://bygecko.com/fr/</organizationUrl>
+      <roles>
+        <role>architect</role>
+        <role>developer</role>
+      </roles>
+      <timezone>Europe/Paris</timezone>
+      <properties>
+        <picUrl>https://github.com/MarcHarnist/maven</picUrl>
+      </properties>
+    </developer>
+  </developers>
 </project>
 
 
